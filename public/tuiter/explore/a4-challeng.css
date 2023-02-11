@@ -19,6 +19,7 @@ body {
 
 .wd-follow-button {
     border-radius: 48px;
+    border-color: black;
 }
 
 .wd-search-container {
@@ -153,6 +154,7 @@ a {
 .btn-primary.override-fs {
     border-radius: 30px;
     background-color: black;
+    border-color: black;
 }
 
 .acknowledgements {
