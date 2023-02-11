@@ -1,6 +1,9 @@
 .wd-fg-color-black { color: black; }
 .wd-fg-color-white { color: white; }
 .wd-fg-color-dark-gray {color: darkgray;}
+.wd-avatar {
+    border-radius: 48px;
+}
 
 body {
     font-family: Arial;
@@ -10,12 +13,44 @@ body {
     background-color: darkgray;
 }
 
+.wd-follow-button {
+    border-radius: 48px;
+}
+
+.wd-search-container {
+    position: relative;
+}
+  
+.wd-search-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.wd-title1 {
+    font-size: 15px;
+    margin-left: 12px;
+    margin-top: 12px;
+}
+
+.wd-handle1 {
+    font-size: 15px;
+    margin-left: 12px;
+    margin-top: 12px;
+}
+
 .wd-search-bar-rounded {
-    border-radius: 10px;
-    width: 80%;
-    height: 20px;
+    border-color: lightgray;
+    position: relative;
+    border-radius: 15px;
+    width: 90%;
+    height: 25px;
 
 }
+
+
 
 .wd-topbar {
     margin-top: 16px;
@@ -51,7 +86,7 @@ body {
 
 .wd-border-style {
     border-width: 1px;
-    border-color: rgb(47, 51, 54);
+    border-color: lightgray;
     border-style: solid;
 }
 
@@ -89,6 +124,21 @@ a {
     text-decoration: none
 }
 
+.btn-primary.override-bs {
+    width: 100%;
+    border-radius: 38px;
+    /* font-size: 2em; */
+    /* font-weight: bolder; */
+ }
+ 
+.btn-primary.override-fs {
+    border-radius: 30px;
+}
+
+p {
+    margin: 0em;
+}
+
 .wd-gear-icon-style {
     color: rgb(29,161,242);
     height: 20px;
@@ -113,4 +163,46 @@ a {
 
 .wd-float-done {
     clear: both
+}
+
+.input-group {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.input-icon-container{
+    display: flex;
+    flex-direction: row;
+    border-radius: 30px;
+    border: 1px solid lightgray;
+    
+    background : #fff;
+    align-items : center;
+    overflow: hidden;
+}
+  
+.input-icon-container input {
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 1em;
+    padding: .5em;
+    color: inherit;
+    flex : auto 1 1;
+    width : 100%;
+    background : none;
+    background-color : transperant;
+}
+
+.main-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: xx-large;
 }
