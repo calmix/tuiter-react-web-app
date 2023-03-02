@@ -167,7 +167,6 @@ a {
     border-top-right-radius: 30px;
     width: 504px;
     height: 264px;
-    margin-left: 12px;
     border-width: 1px;
     border-color: lightgray;
     border-style: solid;
@@ -176,7 +175,6 @@ a {
 .wd-content {
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    margin-left: 12px;
     width: 504px;
     border-width: 1px;
     border-color: lightgray;
