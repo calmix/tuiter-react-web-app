@@ -1,7 +1,6 @@
 .wd-fg-color-black { color: black; }
 .wd-fg-color-white { color: white; }
 .wd-fg-color-dark-gray {color: darkgray;}
-.wd-bg-color-blue {background-color: white;}
 
 body {
     font-family: Arial;
@@ -55,19 +54,13 @@ body {
     border-bottom-style: solid;
 }
 
-.wd-posts-border-style {
-    border-width: 1px;
-    border-color: lightgray;
-    border-bottom-style: solid;
-}
-
 .wd-color-highlight {
     color: rgb(29,161,242);
 }
 
 .wd-link-style {
     font-size: 15px;
-    padding: 16px;
+
 }
 
 .wd-border-bottom-highlight {
@@ -142,7 +135,7 @@ a {
 
 .wd-title1 {
     font-size: 15px;
-    margin-left: 20px;
+    margin-left: 12px;
     margin-top: 12px;
     color: black;
 }
@@ -158,8 +151,12 @@ a {
     color: black;
     font-size: 15px;
     width: 100%;
-    margin-left: 20px;
+    margin-left: 16px;
     margin-bottom: 12px;
+}
+
+.home-screen-border-style {
+    border-radius: 2px;
 }
 
 .wd-content-image {
@@ -167,17 +164,19 @@ a {
     border-top-right-radius: 30px;
     width: 504px;
     height: 264px;
+    margin-left: 12px;
     border-width: 1px;
-    border-color: lightgray;
+    border-color: rgb(47, 51, 54);
     border-style: solid;
 }
 
 .wd-content {
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
+    margin-left: 12px;
     width: 504px;
     border-width: 1px;
-    border-color: lightgray;
+    border-color: rgb(47, 51, 54);
     border-style: solid;
 }
 
@@ -190,17 +189,9 @@ a {
 .wd-content-text {
     margin-left: 12px;
     font-size: 15px;
-    color: black;
+    color: lightgray;
     
 }
-
-
-.btn-primary.override-bs {
-    width: 100%;
-    border-radius: 38px;
-    /* font-size: 2em; */
-    /* font-weight: bolder; */
- }
 
 .wd-heart-icon {
     margin-right: 12px;
@@ -208,18 +199,6 @@ a {
 }
 
 .wd-other-icon {
-    margin-right: 12px;
     color: black;
-    text-decoration: none;
-}
-
-.home-screen-border-style {
-    border-style: solid;
-    border-width: 1px;
-    border-color: lightgray;
-}
-
-.wd-handle2 {
-    color: gray;
-    font-size: 15px;
+    font-size: 13px;
 }

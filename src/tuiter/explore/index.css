@@ -23,4 +23,13 @@
 .wd-bottom-4 {
     bottom: 4px;
 }
- 
+
+.wd-nudge-down {
+    bottom: -50px;
+    left: 25px;
+}
+
+.wd-handle2 {
+    color: gray;
+
+}
