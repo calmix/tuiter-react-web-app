@@ -1,4 +1,6 @@
 import React, { useReducer } from "react";
+import { useDispatch } from "react-redux";
+import { updateTuitThunk } from "../../../services/tuits-thunks";
 
 const initialState = {
     liked: false
@@ -26,18 +28,23 @@ const StatsItem = (
           }
     }
 ) => {
-    const [state, dispatch] = useReducer(reducer, {liked: post.liked});
+    // const [state, dispatch] = useReducer(reducer, {liked: post.liked});
+    const dispatch = useDispatch();
+    const updateTuitHandler = (id) => {
+        dispatch(updateTuitThunk(id));
+    }
     return (
             <div className="row wd-icons ms-2">
                 <a className="col-2 wd-other-icon" href="#"><i className="bi bi-chat"></i> {post.replies}</a>
                 <a className="col-2 wd-other-icon" href="#"><i className="bi bi-repeat"></i> {post.retuits}</a>
-                <a className="col-2 wd-other-icon" href="#" style={{ color: state.liked ? 'red' : 'black'}}
+                <a className="col-2 wd-other-icon" href="#" style={{ color: post.liked ? 'red' : 'black'}}
                 onClick={
-                    () => {
-                        dispatch({payload: !state.liked})
-                    }
+                    () => dispatch(updateTuitThunk({
+                        ...post,
+                        likes: post.likes + 1
+                      }))
                 }
-                ><i className="bi bi-heart"></i> {state.liked? post.likes + 1 : post.likes}</a>
+                ><i className="bi bi-heart"></i> {post.liked? post.likes + 1 : post.likes}</a>
                 <a className="col-2 wd-other-icon" href="#"><i className="bi bi-upload"></i></a>
             </div>
     )
