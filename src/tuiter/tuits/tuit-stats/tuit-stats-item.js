@@ -41,10 +41,11 @@ const StatsItem = (
                 onClick={
                     () => dispatch(updateTuitThunk({
                         ...post,
-                        likes: post.likes + 1
+                        liked: !post.liked,
+                        likes: post.liked? post.likes - 1 : post.likes + 1
                       }))
                 }
-                ><i className="bi bi-heart"></i> {post.liked? post.likes + 1 : post.likes}</a>
+                ><i className="bi bi-heart"></i> {post.likes}</a>
                 <a className="col-2 wd-other-icon" href="#"><i className="bi bi-upload"></i></a>
             </div>
     )
